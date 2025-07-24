@@ -1,0 +1,375 @@
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Model loaded successfully.
+DEBUG:app.main:Received input: bill_length_mm=0.0 bill_depth_mm=0.0 flipper_length_mm=0.0 body_mass_g=0.0 year=0 sex=<Sex.Male: 'male'> island=<Island.Torgersen: 'Torgersen'>
+ERROR:app.main:Prediction failed.
+Traceback (most recent call last):
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\main.py", line 98, in predict
+    prediction = model.predict(X_input)[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1718, in predict
+    class_probs = super().predict(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1327, in predict
+    predts = self.get_booster().inplace_predict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 2667, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 3243, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_female', 'sex_male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+expected sex_Female, sex_Male in input data
+training data did not have the following fields: sex_female, sex_male, year
+DEBUG:app.main:Received input: bill_length_mm=39.1 bill_depth_mm=18.7 flipper_length_mm=181.0 body_mass_g=3750.0 year=2007 sex=<Sex.Male: 'male'> island=<Island.Biscoe: 'Biscoe'>
+ERROR:app.main:Prediction failed.
+Traceback (most recent call last):
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\main.py", line 98, in predict
+    prediction = model.predict(X_input)[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1718, in predict
+    class_probs = super().predict(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1327, in predict
+    predts = self.get_booster().inplace_predict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 2667, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 3243, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_female', 'sex_male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+expected sex_Female, sex_Male in input data
+training data did not have the following fields: sex_female, sex_male, year
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Model loaded successfully.
+DEBUG:app.main:Received input: bill_length_mm=0.0 bill_depth_mm=0.0 flipper_length_mm=0.0 body_mass_g=0.0 year=0 sex=<Sex.Male: 'male'> island=<Island.Torgersen: 'Torgersen'>
+ERROR:app.main:Prediction failed.
+Traceback (most recent call last):
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\main.py", line 99, in predict
+    prediction = model.predict(X_input)[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1718, in predict
+    class_probs = super().predict(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1327, in predict
+    predts = self.get_booster().inplace_predict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 2667, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 3243, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+training data did not have the following fields: year
+DEBUG:app.main:Received input: bill_length_mm=39.1 bill_depth_mm=18.7 flipper_length_mm=181.0 body_mass_g=3750.0 year=2007 sex=<Sex.Male: 'male'> island=<Island.Biscoe: 'Biscoe'>
+ERROR:app.main:Prediction failed.
+Traceback (most recent call last):
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\main.py", line 99, in predict
+    prediction = model.predict(X_input)[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1718, in predict
+    class_probs = super().predict(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1327, in predict
+    predts = self.get_booster().inplace_predict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 2667, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 3243, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+training data did not have the following fields: year
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Model loaded successfully.
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Model loaded successfully.
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Model loaded successfully.
+DEBUG:app.main:Received input: bill_length_mm=0.0 bill_depth_mm=0.0 flipper_length_mm=0.0 body_mass_g=0.0 year=0 sex=<Sex.Male: 'male'> island=<Island.Torgersen: 'Torgersen'>
+ERROR:app.main:Prediction failed.
+Traceback (most recent call last):
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\main.py", line 89, in predict
+    prediction = model.predict(X_input)[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1718, in predict
+    class_probs = super().predict(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1327, in predict
+    predts = self.get_booster().inplace_predict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 2667, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 3243, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+training data did not have the following fields: year
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Model loaded successfully.
+DEBUG:app.main:Received input: bill_length_mm=39.1 bill_depth_mm=18.7 flipper_length_mm=181.0 body_mass_g=3750.0 year=2007 sex=<Sex.Male: 'male'> island=<Island.Biscoe: 'Biscoe'>
+ERROR:app.main:Prediction failed.
+Traceback (most recent call last):
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\main.py", line 97, in predict
+    prediction = model.predict(X_input)[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1718, in predict
+    class_probs = super().predict(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1327, in predict
+    predts = self.get_booster().inplace_predict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 2667, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 3243, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+training data did not have the following fields: year
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Model loaded successfully.
+DEBUG:app.main:Received input: bill_length_mm=0.0 bill_depth_mm=0.0 flipper_length_mm=0.0 body_mass_g=0.0 year=0 sex=<Sex.Male: 'male'> island=<Island.Torgersen: 'Torgersen'>
+ERROR:app.main:Prediction failed.
+Traceback (most recent call last):
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\main.py", line 97, in predict
+    prediction = model.predict(X_input)[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1718, in predict
+    class_probs = super().predict(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1327, in predict
+    predts = self.get_booster().inplace_predict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 2667, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 3243, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+training data did not have the following fields: year
+DEBUG:app.main:Received input: bill_length_mm=39.1 bill_depth_mm=18.7 flipper_length_mm=181.0 body_mass_g=3750.0 year=2007 sex=<Sex.Male: 'male'> island=<Island.Biscoe: 'Biscoe'>
+ERROR:app.main:Prediction failed.
+Traceback (most recent call last):
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\main.py", line 97, in predict
+    prediction = model.predict(X_input)[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1718, in predict
+    class_probs = super().predict(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1327, in predict
+    predts = self.get_booster().inplace_predict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 2667, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 3243, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+training data did not have the following fields: year
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Model loaded successfully.
+DEBUG:app.main:Received input: bill_length_mm=39.1 bill_depth_mm=18.7 flipper_length_mm=181.0 body_mass_g=3750.0 year=2007 sex=<Sex.Male: 'male'> island=<Island.Biscoe: 'Biscoe'>
+ERROR:app.main:Prediction failed.
+Traceback (most recent call last):
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\main.py", line 97, in predict
+    prediction = model.predict(X_input)[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1718, in predict
+    class_probs = super().predict(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1327, in predict
+    predts = self.get_booster().inplace_predict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 2667, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 3243, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+training data did not have the following fields: year
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Model loaded successfully.
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Model loaded successfully.
+DEBUG:app.main:Received input: bill_length_mm=0.0 bill_depth_mm=0.0 flipper_length_mm=0.0 body_mass_g=0.0 year=0 sex=<Sex.Male: 'male'> island=<Island.Torgersen: 'Torgersen'>
+ERROR:app.main:Prediction failed.
+Traceback (most recent call last):
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\main.py", line 97, in predict
+    prediction = model.predict(X_input)[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1718, in predict
+    class_probs = super().predict(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1327, in predict
+    predts = self.get_booster().inplace_predict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 2667, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 3243, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+training data did not have the following fields: year
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Model loaded successfully.
+DEBUG:app.main:Received input: bill_length_mm=0.0 bill_depth_mm=0.0 flipper_length_mm=0.0 body_mass_g=0.0 year=0 sex=<Sex.Male: 'male'> island=<Island.Torgersen: 'Torgersen'>
+ERROR:app.main:Prediction failed.
+Traceback (most recent call last):
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\main.py", line 97, in predict
+    prediction = model.predict(X_input)[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1718, in predict
+    class_probs = super().predict(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1327, in predict
+    predts = self.get_booster().inplace_predict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 2667, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 3243, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+training data did not have the following fields: year
+DEBUG:app.main:Received input: bill_length_mm=0.0 bill_depth_mm=0.0 flipper_length_mm=0.0 body_mass_g=0.0 year=0 sex=<Sex.Male: 'male'> island=<Island.Torgersen: 'Torgersen'>
+ERROR:app.main:Prediction failed.
+Traceback (most recent call last):
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\main.py", line 97, in predict
+    prediction = model.predict(X_input)[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1718, in predict
+    class_probs = super().predict(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\sklearn.py", line 1327, in predict
+    predts = self.get_booster().inplace_predict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 2667, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\.venv\Lib\site-packages\xgboost\core.py", line 3243, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_Female', 'sex_Male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+training data did not have the following fields: year
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Model loaded successfully.
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Model loaded successfully.
+INFO:app.main:Loading model from C:\Users\dhana\OneDrive\Desktop\AI - 2nd year\Sem 2\Enterprise system\Lab3\lab3_Dhanachitra_Dhanapal\app\data\model.json
+INFO:app.main:Model loaded successfully.
+DEBUG:app.main:Received input: bill_length_mm=45.2 bill_depth_mm=15.4 flipper_length_mm=220.0 body_mass_g=5000.0 sex=<Sex.Male: 'male'> island=<Island.Biscoe: 'Biscoe'>
+INFO:app.main:Prediction successful: Gentoo
+DEBUG:app.main:Received input: bill_length_mm=45.2 bill_depth_mm=15.4 flipper_length_mm=220.0 body_mass_g=0.0 sex=<Sex.Male: 'male'> island=<Island.Biscoe: 'Biscoe'>
+INFO:app.main:Prediction successful: Gentoo
+DEBUG:app.main:Received input: bill_length_mm=45.2 bill_depth_mm=15.4 flipper_length_mm=220.0 body_mass_g=5000.0 sex=<Sex.Male: 'male'> island=<Island.Biscoe: 'Biscoe'>
+INFO:app.main:Prediction successful: Gentoo
+DEBUG:app.main:Received input: bill_length_mm=45.2 bill_depth_mm=15.4 flipper_length_mm=220.0 body_mass_g=5000.0 sex=<Sex.Female: 'female'> island=<Island.Biscoe: 'Biscoe'>
+INFO:app.main:Prediction successful: Gentoo
+DEBUG:app.main:Received input: bill_length_mm=45.2 bill_depth_mm=15.4 flipper_length_mm=220.0 body_mass_g=5000.0 sex=<Sex.Male: 'male'> island=<Island.Biscoe: 'Biscoe'>
+INFO:app.main:Prediction successful: Gentoo
+DEBUG:app.main:Received input: bill_length_mm=45.2 bill_depth_mm=15.4 flipper_length_mm=220.0 body_mass_g=5000.0 sex=<Sex.Male: 'male'> island=<Island.Biscoe: 'Biscoe'>
+INFO:app.main:Prediction successful: Gentoo
+DEBUG:app.main:Received input: bill_length_mm=45.2 bill_depth_mm=15.4 flipper_length_mm=220.0 body_mass_g=5000.0 sex=<Sex.Female: 'female'> island=<Island.Torgersen: 'Torgersen'>
+INFO:app.main:Prediction successful: Gentoo
+DEBUG:app.main:Received input: bill_length_mm=45.2 bill_depth_mm=15.4 flipper_length_mm=50.0 body_mass_g=5000.0 sex=<Sex.Female: 'female'> island=<Island.Torgersen: 'Torgersen'>
+INFO:app.main:Prediction successful: Gentoo
+DEBUG:app.main:Received input: bill_length_mm=45.2 bill_depth_mm=15.4 flipper_length_mm=50.0 body_mass_g=500.0 sex=<Sex.Male: 'male'> island=<Island.Torgersen: 'Torgersen'>
+INFO:app.main:Prediction successful: Chinstrap
+DEBUG:app.main:Received input: bill_length_mm=45.2 bill_depth_mm=89.4 flipper_length_mm=50.0 body_mass_g=780.0 sex=<Sex.Male: 'male'> island=<Island.Dream: 'Dream'>
+INFO:app.main:Prediction successful: Adelie
